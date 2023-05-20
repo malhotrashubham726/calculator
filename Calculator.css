@@ -1,0 +1,67 @@
+body{
+    height: 100%;
+    width: 100%;
+    font-family: Cabin;
+}
+
+.button,.buttons{
+    padding: 25px;
+    border-radius: 15%;
+    margin: 0px 2px;
+    cursor: pointer;
+    border: 3px solid white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.row{
+    margin: 5px 0px;
+}
+
+.row input{
+    font-size: 20px;
+    padding: 12px 10px 12px 10px;
+    margin: 10px;
+    border: 3px solid black;
+    text-align: right;
+}
+
+.btn-bg{
+    padding: 25px 59px;
+}
+
+.ls-pd{
+    padding: 25px 20px;
+}
+
+.bg-orange{
+    background-color: orange;
+}
+
+.bg-dark{
+    background-color: black;
+    color: white;
+}
+
+.bg-aqua{
+    background-color: aqua;
+}
+
+.container {
+    margin: auto;
+    width: 310px;
+    height: 510px;
+    border-radius: 3%;
+}
