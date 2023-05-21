@@ -17,9 +17,17 @@ Array.from(buttons).forEach((button) => {
             
             if(count!=0 && countDisable == 0) {
                 if(event.target.innerHTML == "=") {
-                    evaluatedOutput = eval(inputTag.value);
-                    inputTag.value = evaluatedOutput;
-                    countDisable=0;
+                    try {
+                        evaluatedOutput = eval(inputTag.value);
+                        inputTag.value = evaluatedOutput;
+                        countDisable=0;
+                    }
+                    catch(error) {
+                        inputTag.value = "Invalid Operation"
+                        setTimeout(() => {
+                            inputTag.value = ""
+                        },1500)
+                    }
                 } 
                 
                 
