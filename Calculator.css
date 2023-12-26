@@ -5,13 +5,21 @@ body{
 }
 
 .button,.buttons{
-    padding: 25px;
     border-radius: 15%;
-    margin: 0px 2px;
     cursor: pointer;
     border: 3px solid white;
     font-weight: bold;
     font-size: 15px;
+    width: 22.3%;
+    height: 95%;
+}
+
+.m-sm{
+    margin: 0px 2px;
+}
+
+.mr-0{
+    margin-right: 0px !important;
 }
 
 .flex{
@@ -27,23 +35,23 @@ body{
 }
 
 .row{
-    margin: 5px 0px;
+    margin: 2.5px 0px;
+    width: 93%;
+    height: 17%;
+    margin-right: 0px;
 }
 
 .row input{
     font-size: 20px;
-    padding: 12px 10px 12px 10px;
-    margin: 10px;
+    width: 90%;
+    height: 75%;
+    margin: 3px;
     border: 3px solid black;
     text-align: right;
 }
 
 .btn-bg{
-    padding: 25px 59px;
-}
-
-.ls-pd{
-    padding: 25px 20px;
+    width: 47% !important;
 }
 
 .bg-orange{
@@ -61,7 +69,49 @@ body{
 
 .container {
     margin: auto;
-    width: 310px;
-    height: 510px;
+    width: 300px;
+    height: 50vh;
     border-radius: 3%;
+}
+
+.pb-sm{
+    padding-bottom: 5px;
+}
+
+@media screen and (max-height: 950px) {
+    .container{
+        height: 68vh;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container{
+        width: 90vw;
+        margin: 5%;
+    }
+
+    .button,.buttons{
+        width: 22%;
+        margin: 0px 1px;
+    }
+
+    .row input{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 210px) {
+    .button,.buttons{
+        width: 21.8%;
+    }
+
+    .row input{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 185px) {
+    .button,.buttons{
+        width: 21.4%;
+    }
 }
